@@ -3,6 +3,7 @@
     --couleur-secondaire: #111111;
     --couleur-clair: #555555;
     --couleur-fonce: #ffffff;
+    --font-primaire: 'Roboto', sans-serif;
 }
 
 
@@ -10,7 +11,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     background-color: var(--couleur-secondaire);
 }
 h1{
@@ -18,14 +19,60 @@ h1{
 }
 header .logo a {
     color: var(--couleur-fonce);
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.5em;
+    font-family: var(--font-primaire);
+    font-size: 0.4em;
     text-decoration: none;
 }
 header nav a {
-    color: var(--couleur-clair);
+    color: var(--couleur-fonce);
+    font-family: var(--font-primaire);
     text-decoration: none;
-    font-size: 1.0 em;
-    text-decoration: none;
+    font-size: 0.8em;
     margin-left: 25px;
+    opacity: 50%;
 }
+
+
+
+
+.banniere {
+    position: relative;
+    width: 100%;
+    height: 350px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banniere img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+}
+.banniere .texte-banniere {
+    position: absolute;
+    text-align: center;
+    color: var(--couleur-fonce);
+    z-index: 1;
+}
+.banniere .texte-banniere h1 {
+    font-size: 3em;
+    margin: 0 0 20px;
+    font-family: var(--font-primaire);
+}
+.banniere .texte-banniere p {
+    font-size: 1.0em;
+    font-family: var(--font-primaire);
+    color: var(--couleur-fonce);
+    opacity: 0.5;
+}
+.banniere .filtre {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25); 
+  z-index: 1;
+}
+
