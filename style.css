@@ -16,12 +16,14 @@ header {
 }
 h1{
   color: var(--couleur-fonce);
+  font-weight: normal; 
 }
 header .logo a {
     color: var(--couleur-fonce);
     font-family: var(--font-primaire);
     font-size: 0.4em;
     text-decoration: none;
+    font-weight: bold; 
 }
 header nav a {
     color: var(--couleur-fonce);
@@ -116,6 +118,7 @@ header nav a {
 .main h1 {
     color: var(--couleur-secondaire);
     font-family: var(--font-primaire);
+    font-weight: normal; 
 }
 
 .box-grid {
@@ -201,6 +204,7 @@ header nav a {
     font-size: 2em;
     margin: 0 0 20px;
     font-family: var(--font-primaire);
+    font-weight: normal; 
 }
 .banniere2 .texte-banniere2 p {
     font-size: 1.0em;
@@ -212,3 +216,77 @@ header nav a {
 
 
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--couleur-secondaire);
+    padding: 100px;
+    gap: 40px;
+}
+.p1 {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.p1 h1 {
+    font-weight: normal; 
+    margin-bottom: 10px;
+    font-family: var(--font-primaire);
+    color: var(--couleur-fonce);
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.p1 p {
+    margin: 0 0 10px 0;
+    font-family: var(--font-primaire);
+    color: var(--couleur-fonce);
+    opacity: 50%;
+}
+
+
+.p2 h1 {
+    font-weight: normal; 
+    margin-bottom: 10px;
+    font-family: var(--font-primaire);
+    color: var(--couleur-fonce);
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+.p2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.p2 ul li {
+    margin-bottom: 5px;
+}
+
+.p2 ul li a {
+    font-family: var(--font-primaire);
+    color: var(--couleur-fonce);
+    text-decoration: none;
+    opacity: 50%;
+}
+
+
+.p3 h1 {
+    font-weight: normal; 
+    margin-bottom: 10px;
+    font-family: var(--font-primaire);
+    color: var(--couleur-fonce);
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+.p3 ul li img {
+    width: 30px; 
+    height: 30px;
+}
+.p3 a {
+    text-decoration: none;
+    font-family: var(--font-primaire);
+    color: var(--couleur-fonce);
+    opacity: 50%;
+}
